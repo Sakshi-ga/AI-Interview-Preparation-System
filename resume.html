@@ -1,0 +1,7 @@
+<!DOCTYPE html><html><head><title>Resume Analysis</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="topbar"><div class="logo">🤖 AI Interview Preparation</div><div>👤 <span class="student-name">Student</span></div></header><aside class="sidebar">
+<a class="active" href="dashboard.html">🏠 Dashboard</a><a href="practice.html">📚 Practice Questions</a><a href="mock-interview.html">🎤 Mock Interview</a><a href="resume.html">📄 Resume Analysis</a><a href="performance.html">📊 Performance</a><a href="profile.html">👤 Profile</a><a href="#" onclick="logout()">🚪 Logout</a>
+</aside><main class="mainwithside"><div class="page">
+<h1>Resume Analysis</h1><div class="card center mt"><h2>Upload Your Resume</h2><p class="muted">Supported formats: PDF, DOCX (Max 5 MB)</p><input id="resumeInput" type="file" accept=".pdf,.doc,.docx" hidden onchange="showResume(this)"><button class="btn mt" onclick="uploadResume()">Choose File</button><p id="fileName" class="mt"></p></div>
+<div id="skills" class="card mt" style="display:none"><h2>Extracted Skills</h2><span class="tag">Python</span><span class="tag">Machine Learning</span><span class="tag">SQL</span><span class="tag">Data Analysis</span><span class="tag">Problem Solving</span><span class="tag">Communication</span><div class="mt"><button class="btn" onclick="alert('Personalized questions generated!')">Generate Interview Questions</button></div></div>
+</div></main><script src="script.js"></script></body></html>
